@@ -65,6 +65,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 .region-map-card p{margin:0 0 12px;color:var(--muted);font-size:.94rem}
 .map-frame{width:100%;height:220px;border:0;border-radius:14px;background:#dbeafe}
 .map-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.map-actions a{padding:8px 11px;border-radius:10px;background:rgba(125,211,252,.09);border:1px solid rgba(125,211,252,.16)}
+.temp-row{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 2px}.temp-chip{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);font-size:.88rem;color:var(--text)}
 
 </style>
 </head>
@@ -106,7 +107,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     <article class="decision-card">
       <span class="mini-tag">Ultra-kompakt</span>
       <h3>Wenn ihr in 2 Minuten entscheiden wollt</h3>
-      <p>Das hier ist die kurze Version ohne Reiseprosa – eher für die WhatsApp/Telegram-Abstimmung mit deinem Kumpel.</p>
+      <p>Das hier ist die kurze Version ohne Reiseprosa – eher für die WhatsApp/Telegram-Abstimmung mit deinem Kumpel.</p><p style="margin-top:10px;color:var(--muted)">Temperaturen sind grobe Richtwerte aus Klimadaten naher Orte (nicht Live-Vorhersage).</p>
       <div class="decision-picks">
         <div class="pick">
           <strong>Beste April-Wahl</strong>
@@ -119,14 +120,14 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       </div>
       <table class="compact-table">
         <thead>
-          <tr><th>Region</th><th>Fahrt ab Ranstadt</th><th>April</th><th>Juli</th><th>Kerngefühl</th></tr>
+          <tr><th>Region</th><th>Fahrt ab Ranstadt</th><th>Temp grob</th><th>April</th><th>Juli</th><th>Kerngefühl</th></tr>
         </thead>
         <tbody>
-          <tr><td>Waldviertel</td><td>ca. 7 h 00</td><td><span class="badge-yes">sehr gut</span></td><td><span class="badge-mid">gut</span></td><td>ruhig, waldig, burgennah</td></tr>
-          <tr><td>Wachau + Dunkelsteinerwald</td><td>ca. 6 h 30</td><td><span class="badge-yes">sehr gut</span></td><td><span class="badge-mid">gut</span></td><td>fotogen, Burg + Donau + Wald</td></tr>
-          <tr><td>Bucklige Welt + Wechsel</td><td>ca. 8 h 00</td><td><span class="badge-mid">gut</span></td><td><span class="badge-mid">gut</span></td><td>ruhig, wellnessig, sanfte Natur</td></tr>
-          <tr><td>Semmering–Rax–Schneeberg</td><td>ca. 7 h 40</td><td><span class="badge-mid">ok bis gut</span></td><td><span class="badge-yes">sehr gut</span></td><td>Berge, Aussicht, aktiver</td></tr>
-          <tr><td>Lunz am See / Ötscher</td><td>ca. 6 h 45</td><td><span class="badge-no">eher nein</span></td><td><span class="badge-yes">top</span></td><td>See, Berge, Sommerfeeling</td></tr>
+          <tr><td>Waldviertel</td><td>ca. 7 h 00</td><td>Apr 12–15 °C<br>Jul 22–24 °C</td><td><span class="badge-yes">sehr gut</span></td><td><span class="badge-mid">gut</span></td><td>ruhig, waldig, burgennah</td></tr>
+          <tr><td>Wachau + Dunkelsteinerwald</td><td>ca. 6 h 30</td><td>Apr 14–17 °C<br>Jul 25–27 °C</td><td><span class="badge-yes">sehr gut</span></td><td><span class="badge-mid">gut</span></td><td>fotogen, Burg + Donau + Wald</td></tr>
+          <tr><td>Bucklige Welt + Wechsel</td><td>ca. 8 h 00</td><td>Apr 13–16 °C<br>Jul 22–25 °C</td><td><span class="badge-mid">gut</span></td><td><span class="badge-mid">gut</span></td><td>ruhig, wellnessig, sanfte Natur</td></tr>
+          <tr><td>Semmering–Rax–Schneeberg</td><td>ca. 7 h 40</td><td>Apr 10–14 °C<br>Jul 19–22 °C</td><td><span class="badge-mid">ok bis gut</span></td><td><span class="badge-yes">sehr gut</span></td><td>Berge, Aussicht, aktiver</td></tr>
+          <tr><td>Lunz am See / Ötscher</td><td>ca. 6 h 45</td><td>Apr 12–15 °C<br>Jul 21–24 °C</td><td><span class="badge-no">eher nein</span></td><td><span class="badge-yes">top</span></td><td>See, Berge, Sommerfeeling</td></tr>
         </tbody>
       </table>
     </article>
@@ -222,6 +223,8 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       <div class="region-map-card">
         <h4>Wo liegt das?</h4>
         <p>Waldviertel im Nordwesten Niederösterreichs – <strong>ca. 7 h 00 ab Ranstadt</strong>.</p>
+        <div class="temp-row"><span class="temp-chip">Ende April: ca. 12–15 °C tagsüber, 3–5 °C nachts</span><span class="temp-chip">2. Julihälfte: ca. 22–24 °C tagsüber, 12–14 °C nachts</span></div>
+        <p></p>
         <iframe class="map-frame" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=14.4670%2C48.1573%2C15.8670%2C49.0573&layer=mapnik&marker=48.6073%2C15.1670"></iframe>
         <div class="map-actions">
           <a href="https://www.google.com/maps/search/?api=1&query=Zwettl%2C%20Austria" target="_blank" rel="noopener">Region in Google Maps öffnen</a>
@@ -272,6 +275,8 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       <div class="region-map-card">
         <h4>Wo liegt das?</h4>
         <p>Wachau / Dunkelsteinerwald westlich von Wien – <strong>ca. 6 h 30 ab Ranstadt</strong>.</p>
+        <div class="temp-row"><span class="temp-chip">Ende April: ca. 14–17 °C tagsüber, 4–6 °C nachts</span><span class="temp-chip">2. Julihälfte: ca. 25–27 °C tagsüber, 14–16 °C nachts</span></div>
+        <p></p>
         <iframe class="map-frame" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=14.7034%2C47.8446%2C16.1034%2C48.7446&layer=mapnik&marker=48.2946%2C15.4034"></iframe>
         <div class="map-actions">
           <a href="https://www.google.com/maps/search/?api=1&query=Aggsbach%20Dorf%2C%20Austria" target="_blank" rel="noopener">Region in Google Maps öffnen</a>
@@ -322,6 +327,8 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       <div class="region-map-card">
         <h4>Wo liegt das?</h4>
         <p>Semmering-Rax im Südosten Niederösterreichs – <strong>ca. 7 h 40 ab Ranstadt</strong>.</p>
+        <div class="temp-row"><span class="temp-chip">Ende April: ca. 10–14 °C tagsüber, 2–4 °C nachts</span><span class="temp-chip">2. Julihälfte: ca. 19–22 °C tagsüber, 10–12 °C nachts</span></div>
+        <p></p>
         <iframe class="map-frame" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=15.1297%2C47.1878%2C16.5297%2C48.0878&layer=mapnik&marker=47.6378%2C15.8297"></iframe>
         <div class="map-actions">
           <a href="https://www.google.com/maps/search/?api=1&query=Semmering%2C%20Austria" target="_blank" rel="noopener">Region in Google Maps öffnen</a>
@@ -372,6 +379,8 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       <div class="region-map-card">
         <h4>Wo liegt das?</h4>
         <p>Lunz am See im südwestlichen Niederösterreich – <strong>ca. 6 h 45 ab Ranstadt</strong>.</p>
+        <div class="temp-row"><span class="temp-chip">Ende April: ca. 12–15 °C tagsüber, 4–6 °C nachts</span><span class="temp-chip">2. Julihälfte: ca. 21–24 °C tagsüber, 12–14 °C nachts</span></div>
+        <p></p>
         <iframe class="map-frame" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=14.3308%2C47.4117%2C15.7308%2C48.3117&layer=mapnik&marker=47.8617%2C15.0308"></iframe>
         <div class="map-actions">
           <a href="https://www.google.com/maps/search/?api=1&query=Lunz%20am%20See%2C%20Austria" target="_blank" rel="noopener">Region in Google Maps öffnen</a>
@@ -422,6 +431,8 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       <div class="region-map-card">
         <h4>Wo liegt das?</h4>
         <p>Bucklige Welt / Wechsel südöstlich von Wien – <strong>ca. 8 h 00 ab Ranstadt</strong>.</p>
+        <div class="temp-row"><span class="temp-chip">Ende April: ca. 13–16 °C tagsüber, 3–5 °C nachts</span><span class="temp-chip">2. Julihälfte: ca. 22–25 °C tagsüber, 12–14 °C nachts</span></div>
+        <p></p>
         <iframe class="map-frame" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=15.2897%2C47.1578%2C16.6897%2C48.0578&layer=mapnik&marker=47.6078%2C15.9897"></iframe>
         <div class="map-actions">
           <a href="https://www.google.com/maps/search/?api=1&query=Kirchberg%20am%20Wechsel%2C%20Austria" target="_blank" rel="noopener">Region in Google Maps öffnen</a>
