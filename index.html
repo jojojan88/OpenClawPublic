@@ -32,6 +32,8 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 .region-copy{position:relative;z-index:1;padding:26px;width:100%} .region-copy h2{font-size:clamp(1.8rem,3vw,2.8rem);margin:10px 0 8px} .region-copy p{max-width:900px;margin:0;color:#ecf4ff}
 .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} .pills span{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14)}
 .region-body{padding:24px} .two-col{display:grid;grid-template-columns:1.05fr .95fr;gap:22px} @media (max-width:980px){.two-col{grid-template-columns:1fr}}
+.region-summary{margin:0 0 18px;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+.region-summary p{margin:0;color:var(--muted)}
 .spots{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px} .spot{display:block;padding:16px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);min-height:120px} .spot strong{display:block;color:var(--text);margin-bottom:6px} .spot small{display:block;color:var(--muted);font-size:.92rem;line-height:1.45}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px} @media (max-width:760px){.gallery{grid-template-columns:1fr}}
 .gallery-item{position:relative;display:block;min-height:160px;border-radius:18px;overflow:hidden;background-size:cover;background-position:center;border:1px solid rgba(255,255,255,.08)} .gallery-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.7))} .gallery-item span{position:absolute;left:12px;right:12px;bottom:10px;z-index:1;color:#fff;font-weight:700;font-size:.94rem}
@@ -205,6 +207,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="region-body">
+    <div class="region-summary"><p>Das Waldviertel wirkt rauer, stiller und ursprünglicher als viele bekanntere Österreich-Regionen. Statt klassischer Insta-Hotspots bekommt ihr hier viel Wald, Wasser, Granitfelsen und dieses entschleunigte Gefühl von „einfach mal raus“. Gerade für 2–3 Tage ist das stark, weil die Region nicht anstrengend ist und trotzdem genug Charakter hat.</p></div>
     <div class="two-col">
       <div>
         <h3>Sehenswürdigkeiten & Maps</h3>
@@ -212,7 +215,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       </div>
       <div>
         <h3>Impressionen</h3>
-        <div class="gallery"><a class="gallery-item" href="https://hotelottenstein.at/" target="_blank" rel="noopener" style="background-image:url('https://hotelottenstein.at/wp-content/uploads/2022/04/HotelOttenstein-Header-01.jpg')"><span>Hotel Ottenstein / Regionseindruck</span></a><a class="gallery-item" href="https://hotelottenstein.at/" target="_blank" rel="noopener" style="background-image:url('https://hotelottenstein.at/wp-content/uploads/2022/04/Wellness.jpg')"><span>Wellness / Rückzugsgefühl</span></a><a class="gallery-item" href="https://www.schwarzalm.at/" target="_blank" rel="noopener" style="background-image:url('https://www.schwarzalm.at/wp-content/uploads/2024/10/schwarz-alm-1.jpg')"><span>Schwarz Alm Zwettl</span></a></div>
+        <div class="gallery"><a class="gallery-item" href="https://www.austria.info/de-at/regionen/waldviertel/" target="_blank" rel="noopener" style="background-image:url('https://fuutazbsb.filerobot.com/Freigegeben/Bruneiteich-Heidenreichstein-Waldviertel_Oesterreich-Werbung_Peter-Podpera.jpeg?gravity=center&w=1728&h=740&func=crop&q=75')"><span>Waldviertler Teich- und Felsenlandschaft</span></a><a class="gallery-item" href="https://www.waldviertel.at/tipps/hardegg/ausflugsziele" target="_blank" rel="noopener" style="background-image:url('https://imxplatform-cust-noew.fsn1.your-objectstorage.com/media/images/retzerland-217.jpg')"><span>Nordwestliches Niederösterreich / Wein- und Hügelland</span></a><a class="gallery-item" href="https://www.waldviertel.at/tipps/hardegg/ausflugsziele" target="_blank" rel="noopener" style="background-image:url('https://imxplatform-cust-noew.fsn1.your-objectstorage.com/media/images/retzerland-203.jpg')"><span>Ruhige Landschaft statt klassischer Tourihotspots</span></a></div>
         <div class="external-links"><a href="https://www.austria.info/de-at/regionen/waldviertel/" target="_blank" rel="noopener">Austria.info Waldviertel</a><a href="https://www.niederoesterreich.at/waldviertel-kampseen-entdeckungsreise" target="_blank" rel="noopener">Kampseen/Ottenstein</a><a href="https://www.waldviertel.at/tipps/hardegg/ausflugsziele" target="_blank" rel="noopener">Hardegg Tipps</a></div>
       </div>
     </div>
@@ -254,6 +257,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="region-body">
+    <div class="region-summary"><p>Die Wachau verbindet ikonische Landschaft mit echter Abwechslung: Donau, steile Hänge, Burgruinen, Klöster und Wald liegen erstaunlich dicht beieinander. Sie wirkt etwas eleganter und fotogener als das Waldviertel, ohne dass ihr dafür einen Städtetrip machen müsst. Wenn ihr schöne Aussicht mit 1–2 markanten Sehenswürdigkeiten wollt, ist das hier sehr rund.</p></div>
     <div class="two-col">
       <div>
         <h3>Sehenswürdigkeiten & Maps</h3>
@@ -261,7 +265,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       </div>
       <div>
         <h3>Impressionen</h3>
-        <div class="gallery"><a class="gallery-item" href="https://www.hotel-schachner.at/" target="_blank" rel="noopener" style="background-image:url('https://www.hotel-schachner.at/wp-content/uploads/2025/12/dji-20241016074204-0116-d-miku-verbessert-rrklein-scaled.jpg')"><span>Wachau von oben</span></a><a class="gallery-item" href="https://www.hotel-schachner.at/" target="_blank" rel="noopener" style="background-image:url('https://www.hotel-schachner.at/wp-content/uploads/2025/12/inifnity-pool-sonnenterrasse-c-guenter-standl-scaled.jpg')"><span>Infinity-Pool mit Blick</span></a><a class="gallery-item" href="https://www.hotel-schachner.at/" target="_blank" rel="noopener" style="background-image:url('https://www.hotel-schachner.at/wp-content/uploads/2025/12/mku8744-scaled.jpg')"><span>Wachau-Atmosphäre</span></a></div>
+        <div class="gallery"><a class="gallery-item" href="https://www.donau.com/de/die-donau/niederoesterreich/wachau-nibelungengau-kremstal/" target="_blank" rel="noopener" style="background-image:url('https://www.hotel-schachner.at/wp-content/uploads/2025/12/dji-20241016074204-0116-d-miku-verbessert-rrklein-scaled.jpg')"><span>Donautal und Wachau von oben</span></a><a class="gallery-item" href="https://wachauinside.at/empfehlung/burgruine-aggstein/" target="_blank" rel="noopener" style="background-image:url('https://www.hotel-schachner.at/wp-content/uploads/2025/12/mku8744-scaled.jpg')"><span>Wachau-Licht und Hänge über der Donau</span></a><a class="gallery-item" href="https://www.donau.com/touren/welterbesteig-wachau-10-aggsbach-dorf-hofarnsdorf" target="_blank" rel="noopener" style="background-image:url('https://www.hotel-schachner.at/wp-content/uploads/2025/12/inifnity-pool-sonnenterrasse-c-guenter-standl-scaled.jpg')"><span>Blickrichtung Dunkelsteinerwald / Maria Taferl</span></a></div>
         <div class="external-links"><a href="https://www.donau.com/touren/welterbesteig-wachau-10-aggsbach-dorf-hofarnsdorf" target="_blank" rel="noopener">Welterbesteig Wachau</a><a href="https://wachauinside.at/empfehlung/burgruine-aggstein/" target="_blank" rel="noopener">Ruine Aggstein</a><a href="https://www.hotel-schachner.at/" target="_blank" rel="noopener">Hotel Schachner</a></div>
       </div>
     </div>
@@ -303,6 +307,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="region-body">
+    <div class="region-summary"><p>Semmering, Rax und Schneeberg fühlen sich schon deutlich alpiner an als die anderen Vorschläge. Die Region lebt von Weitblick, Höhenluft, Bergbahn-Optionen und diesem alten Sommerfrische-Charme. Sie passt besonders gut, wenn ihr ein aktiveres Wochenende mit Panorama statt Badesee wollt.</p></div>
     <div class="two-col">
       <div>
         <h3>Sehenswürdigkeiten & Maps</h3>
@@ -310,7 +315,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       </div>
       <div>
         <h3>Impressionen</h3>
-        <div class="gallery"><a class="gallery-item" href="https://www.panoramahotel-wagner.at/" target="_blank" rel="noopener" style="background-image:url('https://www.panoramahotel-wagner.at/wp-content/uploads/2013/10/hg_titel_2000px.jpg')"><span>Semmering Panorama</span></a><a class="gallery-item" href="https://www.panoramahotel-wagner.at/" target="_blank" rel="noopener" style="background-image:url('https://www.panoramahotel-wagner.at/wp-content/uploads/2016/10/wagner-winter2016-1920.jpg')"><span>Winter-/Bergstimmung</span></a><a class="gallery-item" href="https://www.panoramahotel-wagner.at/" target="_blank" rel="noopener" style="background-image:url('https://www.panoramahotel-wagner.at/wp-content/uploads/2014/03/haus04_20001.jpg')"><span>Haus am Semmering</span></a></div>
+        <div class="gallery"><a class="gallery-item" href="https://www.wieneralpen.at/semmering-rax/" target="_blank" rel="noopener" style="background-image:url('https://www.panoramahotel-wagner.at/wp-content/uploads/2013/10/hg_titel_2000px.jpg')"><span>Semmering-Rücken und weite Bergkulisse</span></a><a class="gallery-item" href="https://www.wieneralpen.at/semmering-rax/" target="_blank" rel="noopener" style="background-image:url('https://www.panoramahotel-wagner.at/wp-content/uploads/2016/10/wagner-winter2016-1920.jpg')"><span>Rax-/Schneeberg-Stimmung in den Wiener Alpen</span></a><a class="gallery-item" href="https://www.wieneralpen.at/semmering-rax/" target="_blank" rel="noopener" style="background-image:url('https://www.panoramahotel-wagner.at/wp-content/uploads/2014/03/haus04_20001.jpg')"><span>Sommerfrische-Charakter am Semmering</span></a></div>
         <div class="external-links"><a href="https://www.wieneralpen.at/semmering-rax/" target="_blank" rel="noopener">Region Semmering-Rax</a><a href="https://www.wieneralpen.at/semmering-rax/sr-wellnesshotels" target="_blank" rel="noopener">Wellnesshotels</a><a href="https://www.panoramahotel-wagner.at/" target="_blank" rel="noopener">Panoramahotel Wagner</a></div>
       </div>
     </div>
@@ -352,6 +357,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="region-body">
+    <div class="region-summary"><p>Lunz ist die sommerlichste und wahrscheinlich direkt passendste Region für euch, weil dort See, Wald und Berge sehr nah zusammenliegen. Der Lunzer See gibt der ganzen Ecke sofort mehr Urlaubsgefühl, und trotzdem bleibt es natürlicher als viele große Seeregionen. Wenn ihr im Juli fahrt und wenig Fahrerei vor Ort wollt, ist das fast schon der No-Brainer.</p></div>
     <div class="two-col">
       <div>
         <h3>Sehenswürdigkeiten & Maps</h3>
@@ -359,7 +365,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       </div>
       <div>
         <h3>Impressionen</h3>
-        <div class="gallery"><a class="gallery-item" href="https://refugium-lunz.at/" target="_blank" rel="noopener" style="background-image:url('https://refugium-lunz.at/items/uploads/images/lunz-staticOG.jpg')"><span>Refugium Lunz / Ortseindruck</span></a><a class="gallery-item" href="https://refugium-lunz.at/" target="_blank" rel="noopener" style="background-image:url('https://refugium-lunz.at/items/uploads/images/1734343024_1ykxCnzogF6.jpg')"><span>Lunz Impression</span></a><a class="gallery-item" href="https://refugium-lunz.at/" target="_blank" rel="noopener" style="background-image:url('https://refugium-lunz.at/items/uploads/images/1743495873_uHakK64lsnXs.jpg')"><span>Region / Naturdetail</span></a></div>
+        <div class="gallery"><a class="gallery-item" href="https://www.mostviertel.at/orte-mostviertel/a-lunz-am-see" target="_blank" rel="noopener" style="background-image:url('https://imxplatform-cust-noew.fsn1.your-objectstorage.com/media/images/wein3894-lunzer-see-c-mvt-weinfranzat.jpg')"><span>Lunzer See mit klarem Sommerfokus</span></a><a class="gallery-item" href="https://www.mostviertel.at/orte-mostviertel/a-lunz-am-see" target="_blank" rel="noopener" style="background-image:url('https://imxplatform-cust-noew.fsn1.your-objectstorage.com/media/images/dsk_lunz13_2016.jpg')"><span>See- und Bergkulisse direkt bei Lunz</span></a><a class="gallery-item" href="https://www.mostviertel.at/orte-mostviertel/a-lunz-am-see" target="_blank" rel="noopener" style="background-image:url('https://imxplatform-cust-noew.fsn1.your-objectstorage.com/media/images/303_wf134439_1.jpg')"><span>Mostviertler Natur rund um den Ötscher</span></a></div>
         <div class="external-links"><a href="https://www.mostviertel.at/touren/vom-oetscher-zum-lunzer-see" target="_blank" rel="noopener">Ötscher → Lunzer See Tour</a><a href="https://www.ybbstaler-alpen.at/unterkuenfte-in-lunz-am-see-2" target="_blank" rel="noopener">Lunz Unterkünfte</a><a href="https://refugium-lunz.at/" target="_blank" rel="noopener">Refugium Lunz</a></div>
       </div>
     </div>
@@ -401,6 +407,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     </div>
   </div>
   <div class="region-body">
+    <div class="region-summary"><p>Die Bucklige Welt ist weniger spektakulär, dafür aber angenehm ruhig und weich in ihrem Charakter. Statt großer Wow-Berge bekommt ihr Hügel, Wiesen, Obstbäume, kleine Orte und ein sehr entspanntes Naturgefühl. Gerade mit Wellness zusammen ist das eine gute Region, wenn ihr bewusst runterfahren wollt.</p></div>
     <div class="two-col">
       <div>
         <h3>Sehenswürdigkeiten & Maps</h3>
@@ -408,7 +415,7 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
       </div>
       <div>
         <h3>Impressionen</h3>
-        <div class="gallery"><a class="gallery-item" href="https://www.molzbachhof.at/" target="_blank" rel="noopener" style="background-image:url('https://www.molzbachhof.at/fileadmin/_processed_/3/7/csm_holzbach_molzbachhof_kirchberg_wechsel_cba9df8611.jpg')"><span>Molzbachhof / Wechselregion</span></a><a class="gallery-item" href="https://www.hotelweber.at/" target="_blank" rel="noopener" style="background-image:url('https://www.hotelweber.at/wp-content/uploads/2023/04/2023_VitalZEIT_Hotel_Weber_Header_1_1.jpg')"><span>Bad Schönau / Bucklige Welt</span></a><a class="gallery-item" href="https://www.hotelweber.at/" target="_blank" rel="noopener" style="background-image:url('https://www.hotelweber.at/wp-content/uploads/2025/11/VitalZeit_Hotel_Weber_1-1500x630.webp')"><span>Region Bucklige Welt</span></a></div>
+        <div class="gallery"><a class="gallery-item" href="https://www.wieneralpen.at/buckligewelt/" target="_blank" rel="noopener" style="background-image:url('https://cust-noew-portal2025-nbg1.nbg1.your-objectstorage.com/fileadmin/_pixxio/_pixxio/pixxio/apfelbaumbluete-bucklige-welt-10cwiener-alpen-florian-luckerbauer.jpg')"><span>Sanfte Hügellandschaft der Buckligen Welt</span></a><a class="gallery-item" href="https://www.wieneralpen.at/buckligewelt/" target="_blank" rel="noopener" style="background-image:url('https://cust-noew-portal2025-nbg1.nbg1.your-objectstorage.com/fileadmin/_pixxio/_pixxio/pixxio/apfelbaumbluete-zoebern-32cwiener-alpen-florian-luckerbauer.jpg')"><span>Frühlings- und Wiesencharakter rund um den Wechsel</span></a><a class="gallery-item" href="https://www.wieneralpen.at/buckligewelt/" target="_blank" rel="noopener" style="background-image:url('https://cust-noew-portal2025-nbg1.nbg1.your-objectstorage.com/fileadmin/_pixxio/_pixxio/pixxio/apfelbaumbluete-bucklige-welt-13cwiener-alpen-florian-luckerbauer_1.jpg')"><span>Ruhige Auszeitregion statt Hotspot-Tourismus</span></a></div>
         <div class="external-links"><a href="https://www.wieneralpen.at/buckligewelt/gesundheitsort-bad-schoenau" target="_blank" rel="noopener">Bad Schönau / Bucklige Welt</a><a href="https://www.wieneralpen.at/wanderhotel-molzbachhof" target="_blank" rel="noopener">Molzbachhof / Wechsel</a><a href="https://www.buckligewelt.at/" target="_blank" rel="noopener">Region Bucklige Welt</a></div>
       </div>
     </div>
